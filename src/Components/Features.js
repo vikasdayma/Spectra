@@ -41,7 +41,7 @@ const featureData = [
 ];
 
 const Features = () => (
-  <section className="bg-black text-white mt-0 py-20 relative overflow-hidden cyber-grid">
+  <section className="bg-black text-white mt-0 py-20 relative overflow-hidden cyber-grid" id='service'>
     <div className="container mx-auto px-0">
       <h2 className="text-4xl font-bold text-center mb-12 purple-text glitch-effect" data-text="Here Are Our Expertise">
         Here Are Our Expertise

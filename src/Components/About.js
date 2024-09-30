@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <section className="text-gray-600 body-font bg-black">
+  <section className="text-gray-600 body-font bg-black" id='about'>
     <h1 className='text-5xl text-center mt-0 font-bold text-white'>About Us</h1>
     <div className="container px-5 py-24 mx-auto flex flex-wrap mt-6">
       <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">

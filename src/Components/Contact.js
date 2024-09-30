@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <section className="text-gray-600 bg-black body-font relative">
+    <section className="text-gray-600 bg-black body-font relative" id='contact'>
       <h1 className='text-white text-4xl font-bold mt-0 text-center'>Contact Us</h1>
       <div className="absolute inset-0 bg-gray-300 mt-32">
         <iframe

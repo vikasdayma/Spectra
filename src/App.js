@@ -7,6 +7,8 @@ import About from './Components/About';
 import Team from './Components/Team';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import EventCard from './Components/EventCard';
+
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
     <Team/>
     <Contact/>
     <Footer/>
+    <EventCard/>
+  
     </div>
   );
 }
