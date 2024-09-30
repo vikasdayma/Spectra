@@ -1,7 +1,17 @@
 import React from 'react';
 
+import Features from './Features';
+import Navbar from './Navbar';
+import Team from './Team';
+import Footer from './Footer';
+import Event from './Event';
+import About from './About';
+import Contact from './Contact';
 export default function Hero() {
   return (
+    
+    <>
+      <Navbar/>
     <div>
       <div className="container-fluid bg-black feature py-5 ">
         <div className="container py-2">
@@ -42,5 +52,15 @@ export default function Hero() {
         </div>
       </div>
     </div>
+  
+    
+    <Features/>
+    <About/>
+    <Team/>
+    <Event/>
+    <Contact/>
+    <Footer/>
+    
+    </>
   );
 }
