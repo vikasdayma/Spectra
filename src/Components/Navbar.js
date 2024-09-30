@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div className='w-screen py-6 px-5 lg:px-64 bg-black flex justify-between items-center text-white'>
+    <div className='w-scree1n py-6 px-5 lg:px-64 bg-black flex justify-between items-center text-white'>
       {/* Adjust the logo size by applying specific width and height */}
       <img src='logo.jpeg' className='h-10 md:h-12 lg:h-14' alt='Logo' />
       
