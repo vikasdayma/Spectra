@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 
 export default function App() {
   return (
-    <div className='bg-black h-screen'>
+    <div className='bg-black h-screen w-screen overflow-hidden'>
     <Navbar/>
     <Hero/>
     <Features/>
