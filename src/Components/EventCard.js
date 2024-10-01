@@ -3,7 +3,7 @@ import { FiCalendar, FiClock, FiMapPin } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 const EventCard = ({item}) => {
   return (
-    <div className="mt-7 bg-gray-800 flex-wrap text-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 w-80  mx-auto">
+    <div className="mt-7 bg-gray-800 flex-wrap text-white p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 md:w-80 w-72 mx-auto">
     <div className="flex flex-col">
       <div className="mb-3">
         <img
