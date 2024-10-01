@@ -12,7 +12,7 @@ export default function Hero() {
     
     <>
       <Navbar/>
-    <div>
+    <div className='z-20'>
       <div className="container-fluid bg-black feature py-5 ">
         <div className="container py-2">
           <div className="mx-auto text-center pb-3">

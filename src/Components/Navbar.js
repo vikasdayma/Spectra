@@ -3,11 +3,13 @@ import { FaAngleRight } from "react-icons/fa";
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { MobileNav } from './MobileNav';
 export default function Navbar() {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isSubMenuOpen1, setSubMenuOpen1] = useState(false); 
   const [isSubMenuOpen2, setSubMenuOpen2] = useState(false); 
+  const [mobileDropDown,setMobileDropDown]= useState(false)
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen)
  
   const toggleSubMenu1 = () => setSubMenuOpen1(!isSubMenuOpen1);
@@ -38,8 +40,8 @@ export default function Navbar() {
      {
       isSubMenuOpen1 && 
       <ul onMouseEnter={() => setSubMenuOpen1(true) } onMouseLeave={()=>setSubMenuOpen1(false)}  className="absolute ml-32 bottom-4   bg-gray-900 text-white w-32">      
-     <a href='' className='bg inline-block w-full '>Option 1</a>
-     <a className='bg inline-block  w-full'>Option 1</a>
+     <a href='' className='bg inline-block w-full '>2023-2024</a>
+     <a className='bg inline-block  w-full'>2024-2025</a>
      </ul>
       
       }
@@ -50,7 +52,7 @@ export default function Navbar() {
 
      <div className='ml-2 w-full'>
      <button onMouseEnter={toggleSubMenu2} onMouseLeave={ ()=> setSubMenuOpen2(false)} className="bg flex justify-evenly items-center w-full">
-      Team
+      Tea
      <FaAngleRight className='text-xl '/>
      </button>
      
@@ -81,22 +83,7 @@ export default function Navbar() {
 
 
       {/* Hamburger */}
-      <button className='space-y-1 group md:hidden'>
-        <div className='w-6 h-1 bg-white'></div>
-        <div className='w-6 h-1 bg-white'></div>
-        <div className='w-6 h-1 bg-white'></div>
-
-        <ul className='bg-[#252525] w-screen pb-10 absolute -top-full group-focus:top-0 right-0 duration-150 flex flex-col space-y-3 justify-end'>
-          <button className='px-10 py-8 relative ml-auto'>
-            <div className='w-6 h-1 rotate-45 absolute bg-white'></div>
-            <div className='w-6 h-1 -rotate-45 absolute bg-white'></div>
-          </button>
-          <li className='flex justify-center w-full py-4 hover:bg-[#202020]'>About</li>
-          <li className='flex justify-center w-full py-4 hover:bg-[#202020]'>Contact</li>
-          <li className='flex justify-center w-full py-4 hover:bg-[#202020]'>Service</li>
-          <li className='flex justify-center w-full py-4 hover:bg-[#202020]'>Help</li>
-        </ul>
-      </button>
+   <MobileNav></MobileNav>
     </div>
   )
 }
